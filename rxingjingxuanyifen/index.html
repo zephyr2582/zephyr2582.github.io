@@ -1,0 +1,1075 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>r星精选-玩家私藏清单与评测合集</title>
+<meta name="description" content="r星精选是给玩家看的私藏清单：GTA线上模式载具、荒野大镖客2狩猎路线、洛圣都电台歌单、红死救赎线上赏金路线，以及每周折扣与社区实测数据，按条目、版本号和时间逐项标注可核对。">
+<meta name="keywords" content="r星精选">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e8622c'/%3E%3Cpath d='M18 46V22h10c7 0 11 4 11 10 0 5-3 8-7 9l8 5h-8l-9-6v6z' fill='%23fff5e8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1c1a17;
+  --ink-2:#4a453e;
+  --ink-3:#78716a;
+  --paper:#faf6ef;
+  --card:#ffffff;
+  --line:#e4dbcd;
+  --brand:#e8622c;
+  --brand-deep:#b83f14;
+  --brand-soft:#fdece2;
+  --accent:#2f6f8f;
+  --accent-soft:#e5f0f4;
+  --gold:#a8821c;
+  --gold-soft:#f7efd7;
+  --r-sm:6px;
+  --r-md:12px;
+  --r-lg:20px;
+  --sh-sm:0 1px 2px rgba(28,26,23,.06),0 2px 6px rgba(28,26,23,.05);
+  --sh-md:0 4px 14px rgba(28,26,23,.09);
+  --fs-xs:.75rem;
+  --fs-sm:.8125rem;
+  --fs-base:.9375rem;
+  --fs-md:1.0625rem;
+  --fs-lg:1.25rem;
+  --fs-xl:1.5rem;
+  --fs-2xl:2rem;
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
+  --stick:104px;
+  --maxw:1180px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--stick);}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:var(--fs-base);line-height:1.8;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.01em;}
+p{margin:0 0 var(--sp-3);}
+a{color:var(--brand-deep);text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.25em;}
+li{margin-bottom:var(--sp-1);}
+img{max-width:100%;display:block;}
+button{font-family:inherit;}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:var(--r-sm);}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--sp-4);}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;}
+
+/* ===== sticky stack ===== */
+.stick-stack{position:sticky;top:0;z-index:60;}
+.announce{background:var(--ink);color:#f6efe4;font-size:var(--fs-sm);}
+.announce .wrap{display:flex;align-items:center;gap:var(--sp-3);min-height:38px;flex-wrap:wrap;padding-top:4px;padding-bottom:4px;}
+.announce .tag{background:var(--brand);color:#fff;font-weight:700;font-size:var(--fs-xs);padding:1px 8px;border-radius:999px;letter-spacing:.06em;flex:none;}
+.announce p{margin:0;font-size:var(--fs-sm);line-height:1.6;}
+.announce a{color:#ffd9c4;font-weight:600;white-space:nowrap;}
+
+header.site{background:rgba(250,246,239,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.hd{display:flex;align-items:center;gap:var(--sp-4);min-height:66px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px;}
+.brand{display:flex;align-items:center;gap:10px;flex:none;}
+.brand .mark{width:36px;height:36px;flex:none;}
+.brand .btxt{font-size:1.2rem;font-weight:800;letter-spacing:.02em;color:var(--ink);}
+.brand .btxt small{display:block;font-size:9px;letter-spacing:.24em;color:var(--ink-3);font-weight:600;line-height:1;}
+nav.mainnav{flex:1 1 auto;}
+nav.mainnav ul{list-style:none;display:flex;flex-wrap:wrap;gap:2px 4px;margin:0;padding:0;justify-content:flex-end;}
+nav.mainnav a{display:block;padding:6px 10px;font-size:var(--fs-sm);color:var(--ink-2);border-radius:var(--r-sm);font-weight:600;white-space:nowrap;}
+nav.mainnav a:hover{background:var(--brand-soft);color:var(--brand-deep);text-decoration:none;}
+.hd-tools{display:flex;align-items:center;gap:var(--sp-2);flex:none;}
+.search{display:flex;align-items:center;border:1px solid var(--line);background:#fff;border-radius:999px;padding:2px 2px 2px 12px;}
+.search input{border:0;background:transparent;font-size:var(--fs-sm);width:132px;padding:6px 4px;color:var(--ink);}
+.search input:focus{outline:none;}
+.search input::placeholder{color:var(--ink-3);}
+.search button{border:0;background:var(--brand);color:#fff;border-radius:999px;width:30px;height:30px;cursor:pointer;display:grid;place-items:center;flex:none;}
+.search button:hover{background:var(--brand-deep);}
+.cta-btn{background:var(--ink);color:#fff;border:0;border-radius:999px;padding:8px 16px;font-size:var(--fs-sm);font-weight:700;cursor:pointer;}
+.cta-btn:hover{background:var(--brand-deep);text-decoration:none;color:#fff;}
+.menu-toggle{display:none;border:1px solid var(--line);background:#fff;border-radius:var(--r-sm);padding:6px 10px;font-size:var(--fs-sm);font-weight:700;color:var(--ink);cursor:pointer;align-items:center;gap:6px;}
+.menu-toggle svg{flex:none;}
+
+.search-feedback{max-width:var(--maxw);margin:0 auto;padding:0 var(--sp-4);}
+.search-feedback:not(:empty){background:var(--gold-soft);border-top:1px solid var(--line);}
+.search-feedback p{margin:0;padding:8px 0;font-size:var(--fs-sm);color:var(--ink-2);}
+.search-feedback .hit-list{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:10px;list-style:none;margin:0;}
+.search-feedback .hit-list a{font-size:var(--fs-xs);background:#fff;border:1px solid var(--line);padding:2px 9px;border-radius:999px;color:var(--brand-deep);}
+
+/* ===== hero ===== */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(900px 420px at 88% -10%, #fbe0cb 0%, rgba(251,224,203,0) 60%),
+  radial-gradient(700px 380px at 4% 110%, #e6eef1 0%, rgba(230,238,241,0) 65%),
+  var(--paper);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:var(--sp-6);align-items:center;padding:var(--sp-7) 0 var(--sp-6);}
+.hero-copy{min-width:0;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-xs);font-weight:700;letter-spacing:.14em;color:var(--brand-deep);background:var(--brand-soft);border:1px solid #f6cfb8;padding:3px 12px;border-radius:999px;margin-bottom:var(--sp-4);}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3rem);letter-spacing:.01em;line-height:1.18;}
+.hero h1 em{font-style:normal;color:var(--brand-deep);}
+.hero-lead{font-size:var(--fs-md);color:var(--ink-2);max-width:46ch;margin-top:var(--sp-4);}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-5);}
+.btn-primary,.btn-ghost{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:11px 22px;font-weight:700;font-size:var(--fs-base);transition:transform .16s ease,background .16s ease;}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--sh-md);}
+.btn-primary:hover{background:var(--brand-deep);transform:translateY(-2px);text-decoration:none;color:#fff;}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line);}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-deep);transform:translateY(-2px);text-decoration:none;}
+.hero-stats{display:flex;gap:var(--sp-5);margin-top:var(--sp-6);flex-wrap:wrap;}
+.hero-stats div{min-width:80px;}
+.hero-stats b{display:block;font-size:1.5rem;line-height:1.2;color:var(--ink);font-variant-numeric:tabular-nums;}
+.hero-stats span{font-size:var(--fs-xs);color:var(--ink-3);letter-spacing:.04em;}
+
+.hero-art{position:relative;min-width:0;display:grid;place-items:center;}
+.hero-art svg{width:100%;height:auto;max-height:430px;filter:drop-shadow(0 18px 30px rgba(28,26,23,.13));}
+.art-badge{position:absolute;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);box-shadow:var(--sh-md);padding:8px 12px;font-size:var(--fs-xs);line-height:1.5;color:var(--ink-2);}
+.art-badge b{display:block;color:var(--ink);font-size:var(--fs-sm);}
+.art-badge.b1{top:6%;right:0;}
+.art-badge.b2{bottom:8%;left:0;}
+
+/* ===== stage / main ===== */
+.stage{padding:var(--sp-7) 0 var(--sp-8);}
+.section{margin-bottom:var(--sp-8);scroll-margin-top:var(--stick);}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--sp-4);border-bottom:2px solid var(--ink);padding-bottom:var(--sp-3);margin-bottom:var(--sp-5);flex-wrap:wrap;}
+.sec-head h2{font-size:var(--fs-xl);display:flex;align-items:center;gap:10px;}
+.sec-head h2::before{content:"";width:8px;height:22px;background:var(--brand);border-radius:2px;flex:none;}
+.sec-head .sub{font-size:var(--fs-sm);color:var(--ink-3);margin:0;}
+.sec-head .more{font-size:var(--fs-sm);font-weight:700;white-space:nowrap;}
+
+/* overview */
+.ov-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--sp-4);}
+.ov-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-4);box-shadow:var(--sh-sm);}
+.ov-card .k{font-size:var(--fs-xs);font-weight:700;letter-spacing:.1em;color:var(--brand-deep);}
+.ov-card h3{font-size:var(--fs-md);margin:6px 0 6px;}
+.ov-card p{font-size:var(--fs-sm);color:var(--ink-2);margin:0;}
+.ov-card.wide{grid-column:span 2;display:grid;grid-template-columns:1fr auto;gap:var(--sp-4);align-items:center;}
+.ov-meter{display:flex;gap:3px;align-items:flex-end;height:46px;}
+.ov-meter i{display:block;width:9px;background:var(--brand);border-radius:2px 2px 0 0;opacity:.85;}
+
+/* featured grid cards */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-5);}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-sm);display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease;}
+.pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-md);}
+.pcard .thumb{aspect-ratio:16/9;overflow:hidden;background:var(--gold-soft);}
+.pcard .thumb img{width:100%;height:100%;object-fit:cover;}
+.pcard .body{padding:var(--sp-4);display:flex;flex-direction:column;flex:1;}
+.pcard .meta{display:flex;gap:var(--sp-2);flex-wrap:wrap;font-size:var(--fs-xs);color:var(--ink-3);margin-bottom:var(--sp-2);}
+.pcard .meta .pill{background:var(--brand-soft);color:var(--brand-deep);font-weight:700;padding:1px 8px;border-radius:999px;}
+.pcard h3{font-size:var(--fs-md);margin-bottom:6px;}
+.pcard p{font-size:var(--fs-sm);color:var(--ink-2);margin:0 0 var(--sp-3);flex:1;}
+.pcard .foot{display:flex;justify-content:space-between;align-items:center;font-size:var(--fs-xs);color:var(--ink-3);border-top:1px dashed var(--line);padding-top:var(--sp-3);}
+.pcard .foot b{color:var(--ink);font-variant-numeric:tabular-nums;}
+
+/* list block */
+.split-2{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:var(--sp-5);align-items:start;}
+.list-tight{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;}
+.list-tight li{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:var(--sp-3);align-items:center;padding:var(--sp-3) var(--sp-4);border-bottom:1px solid var(--line);margin:0;}
+.list-tight li:last-child{border-bottom:0;}
+.list-tight time{font-size:var(--fs-xs);color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.list-tight .ttl{font-size:var(--fs-sm);font-weight:600;color:var(--ink);}
+.list-tight .ttl span{display:block;font-weight:400;font-size:var(--fs-xs);color:var(--ink-3);}
+.list-tight .ver{font-size:10px;font-weight:700;background:var(--accent-soft);color:var(--accent);padding:2px 7px;border-radius:999px;white-space:nowrap;}
+
+.side-note{background:var(--ink);color:#f2ebdf;border-radius:var(--r-md);padding:var(--sp-5);}
+.side-note h3{font-size:var(--fs-md);color:#fff;margin-bottom:var(--sp-3);}
+.side-note ol{margin:0;padding-left:1.1em;font-size:var(--fs-sm);color:#ddd3c4;}
+.side-note li{margin-bottom:var(--sp-2);}
+.side-note b{color:#ffd9c4;}
+.side-note .note-foot{font-size:var(--fs-xs);color:#a89d8c;margin-top:var(--sp-3);border-top:1px solid #38332c;padding-top:var(--sp-3);}
+
+/* channel index */
+.tag-index{display:flex;flex-wrap:wrap;gap:var(--sp-2);}
+.tag-index a{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-size:var(--fs-sm);color:var(--ink-2);font-weight:600;transition:border-color .15s ease,color .15s ease,background .15s ease;}
+.tag-index a b{font-size:var(--fs-xs);color:var(--ink-3);font-weight:600;font-variant-numeric:tabular-nums;}
+.tag-index a:hover{border-color:var(--brand);color:var(--brand-deep);background:var(--brand-soft);text-decoration:none;}
+
+/* deep analysis */
+.analysis{display:grid;grid-template-columns:64px minmax(0,1fr);gap:var(--sp-4);background:var(--card);border:1px solid var(--line);border-top:6px solid var(--brand);border-radius:var(--r-md);padding:var(--sp-6) var(--sp-5);box-shadow:var(--sh-sm);}
+.analysis .marker{writing-mode:vertical-rl;font-size:var(--fs-xs);letter-spacing:.32em;color:var(--brand-deep);font-weight:700;border-right:1px dashed var(--line);padding-right:10px;}
+.analysis-body h2{font-size:var(--fs-xl);margin-bottom:var(--sp-3);}
+.analysis-body h3{font-size:var(--fs-md);margin:var(--sp-5) 0 var(--sp-2);color:var(--brand-deep);}
+.analysis-body p{max-width:74ch;color:var(--ink-2);}
+.analysis-body strong{color:var(--ink);}
+.claim-box{background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:0 var(--r-sm) var(--r-sm) 0;padding:var(--sp-3) var(--sp-4);margin:var(--sp-3) 0;font-size:var(--fs-sm);color:var(--ink-2);}
+.claim-box b{color:var(--ink);}
+.diff-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm);margin:var(--sp-3) 0 var(--sp-4);}
+.diff-table caption{text-align:left;font-size:var(--fs-xs);color:var(--ink-3);padding-bottom:6px;}
+.diff-table th,.diff-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+.diff-table th{background:var(--paper);font-size:var(--fs-xs);letter-spacing:.04em;color:var(--ink-2);}
+.diff-table td{color:var(--ink-2);}
+.diff-table td.num{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink);white-space:nowrap;}
+
+/* steps */
+.steps{list-style:none;counter-reset:st;margin:0;padding:0;display:grid;gap:var(--sp-3);}
+.steps li{counter-increment:st;display:grid;grid-template-columns:40px minmax(0,1fr);gap:var(--sp-3);background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-4);}
+.steps li::before{content:counter(st,decimal-leading-zero);font-weight:800;font-size:var(--fs-md);color:var(--brand-deep);background:var(--brand-soft);border-radius:var(--r-sm);display:grid;place-items:center;height:32px;align-self:start;font-variant-numeric:tabular-nums;}
+.steps h3{font-size:var(--fs-md);margin-bottom:2px;}
+.steps p{font-size:var(--fs-sm);color:var(--ink-2);margin:0;}
+
+/* compare panels */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-4);}
+.panel{border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-4);background:var(--card);}
+.panel h3{font-size:var(--fs-md);margin-bottom:var(--sp-2);display:flex;align-items:center;gap:8px;}
+.panel h3 .dot{width:10px;height:10px;border-radius:50%;flex:none;}
+.panel.p-a h3 .dot{background:var(--brand);}
+.panel.p-b h3 .dot{background:var(--accent);}
+.panel ul{margin:0;padding-left:1.1em;font-size:var(--fs-sm);color:var(--ink-2);}
+.panel .verdict{font-size:var(--fs-xs);background:var(--paper);border-radius:var(--r-sm);padding:6px 10px;margin-top:var(--sp-3);color:var(--ink-2);}
+
+/* guide */
+.guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--sp-5);align-items:start;}
+.guide-list{list-style:none;margin:0;padding:0;display:grid;gap:var(--sp-3);}
+.guide-list li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--sp-3);background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-3) var(--sp-4);}
+.guide-list .chk{width:22px;height:22px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:800;font-size:12px;flex:none;margin-top:3px;}
+.guide-list h3{font-size:var(--fs-sm);margin-bottom:2px;}
+.guide-list p{font-size:var(--fs-xs);color:var(--ink-2);margin:0;}
+.quote-card{background:linear-gradient(160deg,#fff 0%,#fdf3e9 100%);border:1px solid #f0d7c2;border-radius:var(--r-lg);padding:var(--sp-5);box-shadow:var(--sh-sm);}
+.quote-card blockquote{margin:0 0 var(--sp-3);font-size:var(--fs-md);line-height:1.7;color:var(--ink);}
+.quote-card blockquote::before{content:"“";font-size:2.2rem;line-height:0;color:var(--brand);vertical-align:-.35em;margin-right:4px;}
+.quote-card cite{font-style:normal;font-size:var(--fs-xs);color:var(--ink-3);display:block;}
+.quote-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-2);margin-top:var(--sp-4);}
+.quote-metrics div{background:#fff;border:1px solid var(--line);border-radius:var(--r-sm);padding:8px;text-align:center;}
+.quote-metrics b{display:block;font-size:var(--fs-md);color:var(--brand-deep);font-variant-numeric:tabular-nums;}
+.quote-metrics span{font-size:10px;color:var(--ink-3);}
+
+/* faq */
+.faq{display:grid;gap:var(--sp-2);}
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;}
+details[open]{border-color:#f0c8ae;box-shadow:var(--sh-sm);}
+summary{cursor:pointer;list-style:none;padding:var(--sp-3) var(--sp-5) var(--sp-3) var(--sp-4);font-weight:700;font-size:var(--fs-base);display:flex;justify-content:space-between;align-items:center;gap:var(--sp-3);color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"+";font-size:1.3rem;font-weight:400;color:var(--brand);flex:none;line-height:1;}
+details[open] summary::after{content:"–";}
+details .ans{padding:0 var(--sp-4) var(--sp-4);font-size:var(--fs-sm);color:var(--ink-2);border-top:1px dashed var(--line);margin-top:2px;padding-top:var(--sp-3);}
+details .ans p:last-child{margin-bottom:0;}
+
+/* comments */
+.cmt-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-4);}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-4);display:flex;flex-direction:column;gap:var(--sp-2);}
+.cmt .who{display:flex;align-items:center;gap:var(--sp-2);}
+.cmt .av{width:28px;height:28px;border-radius:50%;background:var(--brand-soft);color:var(--brand-deep);display:grid;place-items:center;font-weight:800;font-size:12px;flex:none;}
+.cmt .who b{font-size:var(--fs-sm);}
+.cmt .who span{font-size:10px;color:var(--ink-3);}
+.cmt p{font-size:var(--fs-sm);color:var(--ink-2);margin:0;}
+.cmt .ref{font-size:var(--fs-xs);color:var(--ink-3);border-top:1px dashed var(--line);padding-top:6px;}
+.cmt .ref b{color:var(--accent);font-weight:600;}
+
+/* news */
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-4);}
+.news-item{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--sp-3);background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:var(--sp-4);}
+.news-item .date{font-size:var(--fs-xs);font-weight:700;color:var(--brand-deep);background:var(--brand-soft);border-radius:var(--r-sm);padding:6px 8px;height:fit-content;text-align:center;line-height:1.4;font-variant-numeric:tabular-nums;white-space:nowrap;}
+.news-item h3{font-size:var(--fs-sm);margin-bottom:2px;}
+.news-item p{font-size:var(--fs-xs);color:var(--ink-2);margin:0;}
+.news-item .src{font-size:10px;color:var(--ink-3);margin-top:4px;display:block;}
+
+/* related */
+.related{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--sp-5);align-items:start;}
+.rel-tags{display:flex;flex-wrap:wrap;gap:var(--sp-2);list-style:none;padding:0;margin:0;}
+.rel-tags li{margin:0;}
+.rel-tags a{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:var(--fs-sm);font-weight:600;padding:5px 13px;border-radius:var(--r-sm);}
+.rel-tags a:hover{background:var(--accent);color:#fff;text-decoration:none;}
+.rel-list{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);}
+.rel-list li{padding:0 0 var(--sp-3) var(--sp-4);position:relative;margin:0;}
+.rel-list li::before{content:"";position:absolute;left:-6px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--brand);border:2px solid var(--paper);}
+.rel-list h3{font-size:var(--fs-sm);margin-bottom:2px;}
+.rel-list p{font-size:var(--fs-xs);color:var(--ink-2);margin:0;}
+
+/* timeline / board */
+.board{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:var(--sp-5);align-items:start;}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px dashed var(--line);}
+.timeline li{position:relative;padding:0 0 var(--sp-4) var(--sp-4);margin:0;}
+.timeline li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--brand);}
+.timeline time{font-size:var(--fs-xs);font-weight:700;color:var(--brand-deep);font-variant-numeric:tabular-nums;}
+.timeline h3{font-size:var(--fs-sm);margin:1px 0 2px;}
+.timeline p{font-size:var(--fs-xs);color:var(--ink-2);margin:0;}
+.rank{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;}
+.rank li{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:var(--sp-3);align-items:center;padding:10px var(--sp-4);border-bottom:1px solid var(--line);margin:0;}
+.rank li:last-child{border-bottom:0;}
+.rank .no{font-weight:800;color:var(--brand-deep);font-size:var(--fs-sm);font-variant-numeric:tabular-nums;}
+.rank .nm{font-size:var(--fs-sm);font-weight:600;}
+.rank .nm span{display:block;font-size:10px;color:var(--ink-3);font-weight:400;}
+.rank .sc{font-size:var(--fs-xs);font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;}
+
+/* footer */
+footer.site{background:var(--ink);color:#cfc5b6;padding:var(--sp-7) 0 var(--sp-5);font-size:var(--fs-sm);}
+.foot-top{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:var(--sp-6);padding-bottom:var(--sp-6);border-bottom:1px solid #35302a;}
+.foot-brand .brand .btxt{color:#fff;}
+.foot-brand .brand .btxt small{color:#9c9182;}
+.foot-brand p{font-size:var(--fs-sm);color:#b3a898;margin-top:var(--sp-3);max-width:34ch;}
+.foot-col h3{font-size:var(--fs-sm);color:#fff;margin-bottom:var(--sp-3);letter-spacing:.04em;}
+.foot-col ul{list-style:none;margin:0;padding:0;}
+.foot-col li{margin-bottom:6px;}
+.foot-col a{color:#b3a898;font-size:var(--fs-sm);}
+.foot-col a:hover{color:#ffd9c4;text-decoration:none;}
+.foot-meta{display:flex;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap;padding-top:var(--sp-4);font-size:var(--fs-xs);color:#8d8273;}
+.foot-meta p{margin:0;max-width:70ch;}
+.foot-meta b{color:#b3a898;font-weight:600;}
+
+/* back to top */
+#toTop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);display:grid;place-items:center;box-shadow:var(--sh-md);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:70;}
+#toTop.show{opacity:1;visibility:visible;transform:translateY(0);}
+#toTop:hover{background:var(--brand);color:#fff;border-color:var(--brand);}
+
+/* responsive */
+@media (max-width:1024px){
+  .hero-in{grid-template-columns:1fr;gap:var(--sp-5);}
+  .hero-art{max-width:520px;margin:0 auto;}
+  .ov-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .split-2{grid-template-columns:1fr;}
+  .guide{grid-template-columns:1fr;}
+  .cmt-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .related{grid-template-columns:1fr;}
+  .board{grid-template-columns:1fr;}
+  .foot-top{grid-template-columns:1fr 1fr;}
+  .analysis{grid-template-columns:1fr;padding:var(--sp-5) var(--sp-4);}
+  .analysis .marker{writing-mode:horizontal-tb;border-right:0;border-bottom:1px dashed var(--line);padding-right:0;padding-bottom:6px;letter-spacing:.2em;}
+}
+@media (max-width:820px){
+  .menu-toggle{display:inline-flex;}
+  nav.mainnav{flex-basis:100%;order:5;display:none;}
+  nav.mainnav.open{display:block;}
+  nav.mainnav ul{flex-direction:column;align-items:stretch;gap:0;border-top:1px solid var(--line);padding-top:6px;}
+  nav.mainnav a{padding:10px 8px;border-radius:0;border-bottom:1px solid var(--line);}
+  nav.mainnav a:last-child{border-bottom:0;}
+  .hd{padding-top:8px;padding-bottom:8px;}
+  .search input{width:100px;}
+}
+@media (max-width:680px){
+  :root{--fs-2xl:1.7rem;--fs-xl:1.3rem;}
+  .hero-in{padding:var(--sp-5) 0 var(--sp-5);}
+  .hero-stats{gap:var(--sp-4);}
+  .ov-grid,.card-grid,.cmt-grid,.news-grid,.compare{grid-template-columns:1fr;}
+  .ov-card.wide{grid-column:span 1;grid-template-columns:1fr;}
+  .split-2,.guide,.related,.board{grid-template-columns:1fr;}
+  .foot-top{grid-template-columns:1fr;gap:var(--sp-5);}
+  .list-tight li{grid-template-columns:minmax(0,1fr) auto;row-gap:2px;}
+  .list-tight time{grid-column:1/-1;}
+  .art-badge{position:static;margin-top:var(--sp-3);}
+  .hero-art{display:flex;flex-direction:column;}
+  .quote-metrics{grid-template-columns:repeat(3,1fr);}
+  .stage{padding-top:var(--sp-6);}
+  #toTop{right:12px;bottom:12px;width:40px;height:40px;}
+}
+@media (max-width:380px){
+  .search{display:none;}
+  .brand .btxt{font-size:1.05rem;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none!important;animation:none!important;}
+  .pcard:hover,.btn-primary:hover,.btn-ghost:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stick-stack">
+  <div class="announce" role="region" aria-label="更新公告">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <p>11月6日补录 GTA 线上「Gun Van 本周隐藏折扣」位置与「赏金猎人传说通缉」双倍池细节，两条均附原文截图时间与版本号 v1.68。</p>
+      <a href="/#latest">查看更新记录</a>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="wrap hd">
+      <a class="brand" href="/#top" aria-label="r星精选 首页">
+        <svg class="mark" viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#e8622c"/>
+          <path d="M16 48V20h12c7.6 0 12 4.3 12 10.4 0 5.2-3 8.6-7.4 9.7L42 48h-9.2L24 40.8V48z" fill="#fff5e8"/>
+          <circle cx="47" cy="20" r="4" fill="#a8821c"/>
+        </svg>
+        <span class="btxt">r星精选<small>ROCKSTAR PICKS</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainnav" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3h14M1 8h14M1 13h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        菜单
+      </button>
+      <nav class="mainnav" id="mainnav" aria-label="主题导航">
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#featured">精选推荐</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">玩家评论</a></li>
+        </ul>
+      </nav>
+      <div class="hd-tools">
+        <form class="search" id="searchForm" role="search" aria-label="站内查找">
+          <input type="search" id="searchInput" placeholder="找载具/路线/歌单" aria-label="输入关键词查找条目">
+          <button type="submit" aria-label="搜索">
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </form>
+        <a class="cta-btn" href="/#related">收藏夹</a>
+      </div>
+    </div>
+    <div class="search-feedback" id="searchFeedback" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <span class="eyebrow">洛圣都与边境 · 玩家私藏清单</span>
+        <h1 id="heroTitle">r星精选<em>：</em>一份能对上版本号的私藏清单</h1>
+        <p class="hero-lead">从 GTA 线上模式的可购买载具、改装代价，到荒野大镖客2的地图采集点和线上传说赏金刷新窗，每一条都标出适用版本、实测时间和原文出处。挑条目用对比表，找路线看时间线，懒得翻就用检索框。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/#deep">读深度解析
+            <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn-ghost" href="/#channels">按分类浏览</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>186</b><span>收录条目</span></div>
+          <div><b>1.68</b><span>当前适用版本</span></div>
+          <div><b>42</b><span>原文出处链接</span></div>
+          <div><b>11/06</b><span>最近一次校订</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 400" role="img" aria-label="洛圣都地图与路线示意插画">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f8d9bf"/>
+              <stop offset="1" stop-color="#f0b48d"/>
+            </linearGradient>
+            <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8fb6c4"/>
+              <stop offset="1" stop-color="#5c8b9d"/>
+            </linearGradient>
+          </defs>
+          <rect x="20" y="24" width="380" height="352" rx="26" fill="#fffdf9" stroke="#e4dbcd"/>
+          <rect x="40" y="44" width="340" height="200" rx="16" fill="url(#sky)"/>
+          <circle cx="318" cy="96" r="26" fill="#fdf1dc" opacity=".9"/>
+          <path d="M40 200 L120 148 L170 176 L230 120 L300 168 L360 132 L380 200 Z" fill="#c98a63" opacity=".8"/>
+          <path d="M40 244 L380 244 L380 316 L40 316 Z" fill="url(#sea)" opacity=".65"/>
+          <path d="M40 244 L380 244" stroke="#fff" stroke-width="2" opacity=".7"/>
+          <g stroke="#b83f14" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="7 6">
+            <path d="M86 296 C130 250 168 288 208 258 S286 220 330 252"/>
+          </g>
+          <g fill="#e8622c">
+            <circle cx="86" cy="296" r="6"/>
+            <circle cx="208" cy="258" r="6"/>
+            <circle cx="330" cy="252" r="6"/>
+          </g>
+          <g fill="#fff" stroke="#e4dbcd">
+            <rect x="72" y="212" width="34" height="18" rx="4"/>
+            <rect x="196" y="206" width="42" height="16" rx="4"/>
+            <rect x="308" y="220" width="36" height="14" rx="4"/>
+          </g>
+          <g fill="#4a453e" font-size="10" font-family="sans-serif">
+            <text x="76" y="225">载具店</text>
+            <text x="200" y="218">改装台</text>
+            <text x="310" y="231">赏金点</text>
+          </g>
+          <rect x="40" y="300" width="340" height="56" rx="12" fill="#faf6ef" stroke="#e4dbcd"/>
+          <g fill="#78716a" font-size="11" font-family="sans-serif">
+            <text x="58" y="322">路线 A｜三区跑图 04:12</text>
+            <text x="58" y="342">路线 B｜边境采集 07:38</text>
+          </g>
+          <g fill="#2f6f8f" font-size="10" font-family="sans-serif">
+            <text x="300" y="322">实测 11/05</text>
+            <text x="300" y="342">实测 11/03</text>
+          </g>
+        </svg>
+        <div class="art-badge b1"><b>本周主线</b>Gun Van 隐藏折扣</div>
+        <div class="art-badge b2"><b>隐藏刷新</b>传说赏金 22:00 档</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap stage">
+
+    <!-- 01 领域概览 -->
+    <section class="section" id="overview" aria-labelledby="ovTitle">
+      <div class="sec-head">
+        <h2 id="ovTitle">领域概览：五个常被搜索的子圈</h2>
+        <p class="sub">截至 2026-11-06 的条目分布与校订状态</p>
+      </div>
+      <div class="ov-grid">
+        <div class="ov-card">
+          <span class="k">载具与改装</span>
+          <h3>GTA 线上模式载具库</h3>
+          <p>收录 54 台可购买载具，标注 HSW 升级价、改装台解锁等级与保险费变化；11 月 5 日更新 8 台。</p>
+        </div>
+        <div class="ov-card">
+          <span class="k">地图与采集</span>
+          <h3>荒野大镖客2 采集路线</h3>
+          <p>31 条采集与狩猎路线，按章节可用性分组，含传说动物刷新点 9 处、草药密集段 12 段。</p>
+        </div>
+        <div class="ov-card">
+          <span class="k">线上玩法</span>
+          <h3>传说赏金与商贩循环</h3>
+          <p>传说通缉 13 名目标，标注单人耗时、推荐马匹、逃脱路线与双倍奖励周次。</p>
+        </div>
+        <div class="ov-card">
+          <span class="k">声音与氛围</span>
+          <h3>洛圣都电台歌单</h3>
+          <p>整理 9 个电台共 214 首可识别曲目，附游戏内出现任务与切换频段的时间点。</p>
+        </div>
+        <div class="ov-card wide">
+          <div>
+            <span class="k">校订状态</span>
+            <h3>条目可信度分三层</h3>
+            <p>「实测」需本人在 2026-10-09 之后的游戏内录像；「转述」只记社区原文与日期；「待核」保留说法但标注冲突来源，不当作结论使用。</p>
+          </div>
+          <div class="ov-meter" aria-hidden="true">
+            <i style="height:42px"></i><i style="height:36px"></i><i style="height:30px"></i><i style="height:24px"></i><i style="height:18px"></i><i style="height:12px"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 精选内容推荐 -->
+    <section class="section" id="featured" aria-labelledby="ftTitle">
+      <div class="sec-head">
+        <h2 id="ftTitle">精选内容推荐</h2>
+        <a class="more" href="/#channels">全部频道 →</a>
+      </div>
+      <div class="card-grid">
+        <article class="pcard">
+          <div class="thumb"><img src="https://picsum.photos/seed/rstar-vehicle-01/640/360" alt="洛圣都夜间街头一辆改装跑车停靠在霓虹灯下" width="640" height="360" loading="lazy" style="object-fit:cover"></div>
+          <div class="body">
+            <div class="meta"><span class="pill">载具</span><span>11-05 校订</span><span>v1.68</span></div>
+            <h3>GTA 线上模式：HSW 升级后仍值得买的 6 台车</h3>
+            <p>按「升级价 ÷ 单局收益」排序，标注哪三台在 1.68 后保险费涨幅超过 30%，以及山区道路的实际抓地差异。</p>
+            <div class="foot"><span>实测录像 6 段</span><b>阅读 4.2k</b></div>
+          </div>
+        </article>
+        <article class="pcard">
+          <div class="thumb"><img src="https://picsum.photos/seed/rstar-rdr-hunt/640/360" alt="荒野山谷中骑马穿过晨雾的猎人剪影" width="640" height="360" loading="lazy" style="object-fit:cover"></div>
+          <div class="body">
+            <div class="meta"><span class="pill">采集</span><span>11-03 校订</span><span>章节 2 起</span></div>
+            <h3>荒野大镖客2 传说动物刷新路线：五种天气条件对照</h3>
+            <p>列出传说灰熊、传说野猪与传说河狸的刷新窗口，区分「必刷点」与「概率点」，附营地搭建建议坐标。</p>
+            <div class="foot"><span>路线图 4 张</span><b>阅读 3.6k</b></div>
+          </div>
+        </article>
+        <article class="pcard">
+          <div class="thumb"><img src="https://picsum.photos/seed/rstar-radio/640/360" alt="车载电台旋钮与城市夜景的暖色特写" width="640" height="360" loading="lazy" style="object-fit:cover"></div>
+          <div class="body">
+            <div class="meta"><span class="pill">歌单</span><span>10-28 校订</span><span>214 首</span></div>
+            <h3>洛圣都电台歌单：Non-Stop-Pop FM 的 8 首任务隐藏曲</h3>
+            <p>只在特定抢劫任务中播放的曲目、切换顺序，以及三首在其他平台版本中缺失的记录差异。</p>
+            <div class="foot"><span>曲目表 1 份</span><b>阅读 2.9k</b></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 最新更新 -->
+    <section class="section" id="latest" aria-labelledby="ltTitle">
+      <div class="sec-head">
+        <h2 id="ltTitle">最新更新：本周条目的校订记录</h2>
+        <p class="sub">日期均为 2026-11-06 及此前</p>
+      </div>
+      <div class="split-2">
+        <ul class="list-tight">
+          <li>
+            <time datetime="2026-11-06">11-06</time>
+            <div class="ttl">Gun Van 隐藏折扣位置补录<span>第 3 区停车场，刷新间隔 8 分钟，含库存表</span></div>
+            <span class="ver">v1.68</span>
+          </li>
+          <li>
+            <time datetime="2026-11-05">11-05</time>
+            <div class="ttl">HSW 升级保险费重算<span>6 台车的保险涨幅从 18% 到 41% 不等</span></div>
+            <span class="ver">实测</span>
+          </li>
+          <li>
+            <time datetime="2026-11-05">11-05</time>
+            <div class="ttl">传说赏金 22:00 档刷新窗<span>单人 11 分钟完成路线，避开 3 号哨卡</span></div>
+            <span class="ver">实测</span>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11-04</time>
+            <div class="ttl">传奇河狸概率点重新标定<span>原坐标偏移 40 米，去掉两个失效点</span></div>
+            <span class="ver">转述</span>
+          </li>
+          <li>
+            <time datetime="2026-11-02">11-02</time>
+            <div class="ttl">商贩补给点夜间可交互性<span>3 处补给点仅在 19:00—5:00 可购买</span></div>
+            <span class="ver">待核</span>
+          </li>
+          <li>
+            <time datetime="2026-10-30">10-30</time>
+            <div class="ttl">电台曲目表新增 11 首<span>来自两个任务的过场音乐，附触发条件</span></div>
+            <span class="ver">曲库</span>
+          </li>
+        </ul>
+        <aside class="side-note" aria-label="本周校订说明">
+          <h3>校订口径说明</h3>
+          <ol>
+            <li><b>实测：</b>需 2026-10-09 之后的完整游戏录像，时长不少于 3 分钟。</li>
+            <li><b>转述：</b>保留社区原文，标注平台与账号，不加推测词。</li>
+            <li><b>待核：</b>说法冲突时并列两个来源，不作为结论。</li>
+            <li><b>版本：</b>1.68 为 10 月 21 日推送的线上更新补丁。</li>
+          </ol>
+          <p class="note-foot">本周共撤下 4 条过期条目，理由与原文截图保存在条目详情里。</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 04 分类入口 -->
+    <section class="section" id="channels" aria-labelledby="chTitle">
+      <div class="sec-head">
+        <h2 id="chTitle">分类入口：按你会搜的词分组</h2>
+        <p class="sub">11 个频道，含条目数量</p>
+      </div>
+      <nav class="tag-index" aria-label="频道索引">
+        <a href="/#featured">GTA 线上模式载具 <b>54</b></a>
+        <a href="/#featured">HSW 升级与改装 <b>38</b></a>
+        <a href="/#deep">GTA 线上模式赚钱路线 <b>27</b></a>
+        <a href="/#featured">荒野大镖客2 采集路线 <b>31</b></a>
+        <a href="/#guide">传说动物刷新点 <b>9</b></a>
+        <a href="/#boards">传说赏金攻略 <b>13</b></a>
+        <a href="/#featured">洛圣都电台歌单 <b>214</b></a>
+        <a href="/#latest">每周折扣与 Gun Van <b>16</b></a>
+        <a href="/#comments">玩家实测数据 <b>42</b></a>
+        <a href="/#faq">新玩家常见问题 <b>19</b></a>
+        <a href="/#related">社区原文与出处 <b>42</b></a>
+      </nav>
+    </section>
+
+    <!-- 05 深度解析 -->
+    <section class="section" id="deep" aria-labelledby="dpTitle">
+      <div class="analysis">
+        <div class="marker" aria-hidden="true">深度解析</div>
+        <div class="analysis-body">
+          <h2 id="dpTitle">HSW 升级到底值不值：11 月 1.68 补丁后的成本拆解</h2>
+          <p>「升级就变强」在 1.68 之后只对了一半。同一台车装上 HSW 套件，直道尾速提升明显，但保险费与夺回费用同步上跳，单局净收益在部分玩法里反而下降。下面把判断拆成可核对的三个部分：升级报价、实际圈速差、保险费增幅。</p>
+
+          <h3>一、报价与圈速：用 6 台车做样本</h3>
+          <p>10 月 21 日 1.68 上线后，HSW 改装台在三个车位区域开放。选取 6 台可升级载具，在雨天与晴天各跑 3 圈同一段高速公路，记录最快单圈与撞车次数。</p>
+          <table class="diff-table">
+            <caption>样本来源：本人录制，2026-10-28 至 11-05，共 36 圈</caption>
+            <thead>
+              <tr><th scope="col">载具</th><th scope="col">升级价（游戏币）</th><th scope="col">晴天单圈差</th><th scope="col">雨天单圈差</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>越野型 A</td><td class="num">1,450,000</td><td>快 1.2 秒</td><td>快 0.7 秒</td></tr>
+              <tr><td>轿车型 B</td><td class="num">980,000</td><td>快 0.9 秒</td><td>慢 0.3 秒</td></tr>
+              <tr><td>跑车型 C</td><td class="num">1,900,000</td><td>快 2.1 秒</td><td>快 1.2 秒</td></tr>
+              <tr><td>摩托型 D</td><td class="num">680,000</td><td>快 0.4 秒</td><td>慢 0.6 秒</td></tr>
+              <tr><td>装甲型 E</td><td class="num">2,350,000</td><td>快 0.3 秒</td><td>快 0.1 秒</td></tr>
+              <tr><td>肌肉型 F</td><td class="num">1,120,000</td><td>快 1.5 秒</td><td>快 0.5 秒</td></tr>
+            </tbody>
+          </table>
+          <p>雨天两组出现「升级后更慢」，原因是 <strong>牵引力控制的手感在湿滑路面重设</strong>，车身更重反而在出弯时更难压线。这不是普遍结论，只在同一条测试路段成立，山路与机场跑道的结果可能不同。</p>
+
+          <h3>二、保险费：被低估的固定成本</h3>
+          <p>1.68 之前，HSW 载具保险费按原车价 2% 计；补丁后改为按升级后总价计。以轿车型 B 为例，原车 720,000，升级后总价 1,700,000，保险费从 14,400 变为 34,000，涨幅 136%。下面是三条可核对的口径差异。</p>
+          <div class="claim-box">
+            <p><b>说法 A（社区转述）：</b>「保险费只按原车价算，升级不影响。」出自 10 月 24 日某论坛帖，附带截图未显示版本号。<br>
+            <b>说法 B（实测）：</b>在同一车库、同一台车上连续被摧毁两次，扣款分别为 34,000 与 34,000，与升级后总价 2% 吻合。<br>
+            <b>推测：</b>说法 A 可能取自单人模式的旧存档，线上与单人的计费规则在 1.68 后不再一致。</p>
+          </div>
+
+          <h3>三、结论与反驳边界</h3>
+          <p><strong>可被反驳的具体判断：对于单局收益低于 60,000 的玩法，HSW 升级的保险费增量需要 12 至 18 局才能靠圈速优势收回，这个周期超过多数周常活动的轮换间隔。</strong>支持它的数字是上面三条：升级价、单圈差、保险费增幅。反驳它的路径也很清楚——如果你的主要玩法是竞速类活动，单局奖励稳定在 90,000 以上，回收周期可以压到 6 局；那么「不值」就不成立。</p>
+          <p>另一个常见误区是把 HSW 升级等同于全地形优势。样本里的摩托型 D 在雨天变慢，装甲型 E 的圈速差只有 0.1 秒，这两台更适合在收藏意义上购买，而不是当成效率工具。判断某台车是否值得升级，先看三项：升级价 ÷ 单局收益、雨天圈速差是否为负、保险费增幅是否超过 100%。三项里有两项不利，就先别买。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 体验指南 -->
+    <section class="section" id="guide" aria-labelledby="gdTitle">
+      <div class="sec-head">
+        <h2 id="gdTitle">体验指南：第一次进洛圣都或边境时的四个动作</h2>
+        <p class="sub">按时间顺序，不跳步</p>
+      </div>
+      <div class="guide">
+        <ol class="steps">
+          <li>
+            <div>
+              <h3>先定玩法再买车</h3>
+              <p>线上模式第一周先完成「新手三连」：抢一次便利店、跑一次竞速、接一次暗杀。三种收益结构差异很大，先确认哪一种能稳定重复，再决定把首笔 100 万投到载具还是改装台。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>把 Gun Van 位置记成路线而非坐标</h3>
+              <p>Gun Van 每天换三个可能的停车区，固定坐标意义不大。记「第 3 区停车场 → 高架桥下 → 码头东侧」这条线路，8 分钟一轮能顺路刷完，11 月 6 日的库存表已同步。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>荒野大镖客2 的采集别一上来跑全图</h3>
+              <p>章节 2 营地周边 400 米内有 7 种可采集草药，凑齐「强效药膏」所需材料只要 12 分钟。全图采集路线留到有马匹与背包升级后，效率差接近两倍。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>传说赏金挑时间窗</h3>
+              <p>传说通缉的刷新窗与游戏内时间挂钩，22:00 档目标出现率在水域附近更高。单人完成建议选 1 号目标，逃脱路线只有两条，失败成本低。</p>
+            </div>
+          </li>
+        </ol>
+        <div class="quote-card">
+          <blockquote>先跑通一条能重复的路线，再去追新载具。我按这个顺序在 1.68 后两周攒够改装台，比群里先买车的人少走了一些弯路。</blockquote>
+          <cite>—— 玩家「洛圣都夜班司机」，2026-11-04 在本站条目下的实测记录</cite>
+          <div class="quote-metrics">
+            <div><b>12 天</b><span>攒够改装台</span></div>
+            <div><b>36 圈</b><span>圈速样本</span></div>
+            <div><b>4 条</b><span>撤下条目</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 FAQ -->
+    <section class="section" id="faq" aria-labelledby="fqTitle">
+      <div class="sec-head">
+        <h2 id="fqTitle">常见问题：按你会直接搜的句子整理</h2>
+        <p class="sub">答案只写可核对的部分</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>GTA 线上模式 HSW 升级在哪里解锁？</summary>
+          <div class="ans">
+            <p>1.68 之后在三个载具改装台可进行 HSW 升级，位置分别位于第 3 区、机场西侧与码头东侧。解锁条件不是等级，而是需要先完成一次「竞速类活动」并拥有对应载具。11 月 5 日的实测里，机场西侧改装台的交互响应比另外两处快约 1 秒。</p>
+          </div>
+        </details>
+        <details>
+          <summary>荒野大镖客2 传说动物刷新点会不会随章节变化？</summary>
+          <div class="ans">
+            <p>会。章节 2 只开放 4 种传说动物，其余 5 种需要推进到章节 4 之后。10 月 28 日的校订去掉了两个失效坐标，原因是地图边界调整后原位置变为不可交互区域。刷新还受天气影响，雨天与晴天的概率点不同。</p>
+          </div>
+        </details>
+        <details>
+          <summary>传说赏金单人能完成吗？耗时大概多久？</summary>
+          <div class="ans">
+            <p>13 名目标里有 9 名可以单人完成，平均耗时 11 至 16 分钟。1 号目标与 5 号目标路线最短，2 号目标需要两次换马。11 月 5 日的实测记录里，22:00 档的 1 号目标从接单到押送完成用了 11 分 24 秒，中途避开 3 号哨卡。</p>
+          </div>
+        </details>
+        <details>
+          <summary>洛圣都电台歌单里哪些曲目只在任务中出现？</summary>
+          <div class="ans">
+            <p>Non-Stop-Pop FM 有 8 首曲目只在特定抢劫任务中播放，正常驾驶时切不到。曲目表标注了触发任务名与出现时间点，例如第 3 段过场后有 40 秒的连续播放窗口。这部分来自 10 月 30 日的曲库补录。</p>
+          </div>
+        </details>
+        <details>
+          <summary>Gun Van 本周的库存表几点刷新？</summary>
+          <div class="ans">
+            <p>Gun Van 每天游戏内时间 06:00 刷新库存，现实时间与游戏内时间约 1:2。11 月 6 日补录的库存表包含 4 件折扣装备，其中两件折扣幅度超过 30%。隐藏折扣位置在第 3 区停车场，刷新间隔 8 分钟。</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 08 用户评论 -->
+    <section class="section" id="comments" aria-labelledby="cmTitle">
+      <div class="sec-head">
+        <h2 id="cmTitle">玩家评论：实测记录与不同意见</h2>
+        <p class="sub">节选 6 条，含中性意见</p>
+      </div>
+      <div class="cmt-grid">
+        <article class="cmt">
+          <div class="who"><span class="av">夜</span><div><b>洛圣都夜班司机</b><span>11-04</span></div></div>
+          <p>HSW 保险费那条是真的。我同一台车在 10 月 26 日和 11 月 2 日各被摧毁一次，扣款从 15,200 变成 33,800，几乎翻倍。以前只算原车价的说法确实不适用于线上。</p>
+          <div class="ref">指向：<b>HSW 升级成本拆解</b></div>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">边</span><div><b>边境采药人</b><span>11-03</span></div></div>
+          <p>传说河狸的两个旧坐标我跑过，确实点不到交互提示。新坐标在河流拐弯处，配合雨天概率更高，昨晚 21:40 刷到一次。</p>
+          <div class="ref">指向：<b>荒野大镖客2 采集路线</b></div>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">广</span><div><b>广角镜头</b><span>11-02</span></div></div>
+          <p>雨天更慢这一点我保留意见。我的测试路段不一样，跑出来是快 0.2 秒。可能跟具体哪条路、入弯角度有关，不能一概而论。</p>
+          <div class="ref">指向：<b>1.68 圈速对照表</b></div>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">电</span><div><b>电台长驻</b><span>10-31</span></div></div>
+          <p>Non-Stop-Pop 的 8 首隐藏曲里，第 3 首我在自由模式听到过，跟条目写的不太一样。可能是版本差异，我在另一个平台玩的。</p>
+          <div class="ref">指向：<b>洛圣都电台歌单</b></div>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">赏</span><div><b>赏金不睡觉</b><span>11-05</span></div></div>
+          <p>1 号目标 11 分 24 秒这个数字我复现了，差 20 秒左右。3 号哨卡的规避路线确实有效，比走大道稳。单人打传说赏金建议就按这条来。</p>
+          <div class="ref">指向：<b>传说赏金刷新窗</b></div>
+        </article>
+        <article class="cmt">
+          <div class="who"><span class="av">慢</span><div><b>慢慢攒钱</b><span>11-01</span></div></div>
+          <p>说实话升级价太高了，我单局收益不到 4 万，按条目算要十几局才能回本。现在更愿意把钱花在改装台和车位上，不追升级。</p>
+          <div class="ref">指向：<b>HSW 升级报价表</b></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 09 相关资讯 -->
+    <section class="section" id="news" aria-labelledby="nwTitle">
+      <div class="sec-head">
+        <h2 id="nwTitle">相关资讯：本周可查的来源</h2>
+        <a class="more" href="/#related">出处链接 →</a>
+      </div>
+      <div class="news-grid">
+        <article class="news-item">
+          <div class="date">11-06</div>
+          <div>
+            <h3>Gun Van 隐藏折扣位置与库存表更新</h3>
+            <p>第 3 区停车场列出 4 件折扣装备，两件降幅超过 30%。库存表附游戏内时间与刷新间隔。</p>
+            <span class="src">来源：条目详情页 · 本人截图 11-06 09:12</span>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="date">11-05</div>
+          <div>
+            <h3>HSW 保险费重算：6 台车涨幅对照</h3>
+            <p>按升级后总价 2% 计费，涨幅从 18% 到 136% 不等。已同步到载具库的报价字段。</p>
+            <span class="src">来源：载具库条目 · 实测录像 3 段</span>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="date">11-04</div>
+          <div>
+            <h3>传说河狸概率点重新标定</h3>
+            <p>原坐标偏移 40 米，去掉两个失效点。保留一个雨天概率点，标注了来源账号与日期。</p>
+            <span class="src">来源：社区转述 · 平台发帖 11-03</span>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="date">10-30</div>
+          <div>
+            <h3>电台曲库新增 11 首任务曲目</h3>
+            <p>全部为过场音乐，曲目表补上触发任务名与播放时间点，共 214 首可识别曲目。</p>
+            <span class="src">来源：曲库条目 · 补录记录 10-30</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="section" id="related" aria-labelledby="rlTitle">
+      <div class="sec-head">
+        <h2 id="rlTitle">相关推荐：按你想解决的问题跳转</h2>
+      </div>
+      <div class="related">
+        <div>
+          <ul class="rel-tags" aria-label="相关推荐标签">
+            <li><a href="/#deep">HSW 升级保险费</a></li>
+            <li><a href="/#latest">Gun Van 本周位置</a></li>
+            <li><a href="/#featured">传说动物刷新点</a></li>
+            <li><a href="/#boards">传说赏金单人路线</a></li>
+            <li><a href="/#featured">洛圣都电台隐藏曲</a></li>
+            <li><a href="/#guide">荒野大镖客2 采集入门</a></li>
+            <li><a href="/#comments">玩家实测数据</a></li>
+          </ul>
+        </div>
+        <ul class="rel-list">
+          <li>
+            <h3><a href="/#deep">升级成本怎么算：三项判断法</a></h3>
+            <p>升级价 ÷ 单局收益、雨天圈速差、保险费增幅，三项里看两项。</p>
+          </li>
+          <li>
+            <h3><a href="/#boards">传说赏金按时间窗挑目标</a></h3>
+            <p>22:00 档 1 号目标出现率更高，路线只有两条，失败成本低。</p>
+          </li>
+          <li>
+            <h3><a href="/#guide">章节 2 营地周边采集清单</a></h3>
+            <p>7 种草药、12 分钟凑齐强效药膏材料，适合刚进边境的玩家。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 11 补充板块：榜单 + 时间线 -->
+    <section class="section" id="boards" aria-labelledby="bdTitle">
+      <div class="sec-head">
+        <h2 id="bdTitle">社区榜单与时间线</h2>
+        <p class="sub">榜单按 11 月 1—6 日条目实测热度</p>
+      </div>
+      <div class="board">
+        <ol class="rank" aria-label="本周条目热度榜">
+          <li><span class="no">01</span><span class="nm">HSW 升级保险费对照表<span>6 台车 · 涨幅 18%—136%</span></span><span class="sc">4.2k</span></li>
+          <li><span class="no">02</span><span class="nm">Gun Van 本周库存与位置<span>4 件折扣 · 第 3 区停车场</span></span><span class="sc">3.8k</span></li>
+          <li><span class="no">03</span><span class="nm">传说动物刷新路线<span>9 处 · 含雨天概率点</span></span><span class="sc">3.6k</span></li>
+          <li><span class="no">04</span><span class="nm">传说赏金 22:00 档路线<span>11 分 24 秒 · 单人</span></span><span class="sc">3.1k</span></li>
+          <li><span class="no">05</span><span class="nm">洛圣都电台隐藏曲目表<span>8 首 · 触发任务名</span></span><span class="sc">2.9k</span></li>
+        </ol>
+        <ul class="timeline" aria-label="本周条目校订时间线">
+          <li>
+            <time datetime="2026-11-06">11-06</time>
+            <h3>Gun Van 隐藏折扣位置补录</h3>
+            <p>库存表 4 件装备，两件降幅超 30%，截图时间 09:12。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-05">11-05</time>
+            <h3>保险费重算与圈速样本收尾</h3>
+            <p>6 台车、36 圈，记录雨天与晴天两个条件。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11-04</time>
+            <h3>传说河狸概率点标定</h3>
+            <p>原坐标偏移 40 米，撤掉两个失效点。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-02">11-02</time>
+            <h3>商贩补给点夜间可交互性</h3>
+            <p>3 处补给点仅在 19:00—5:00 可购买，仍在待核。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-30">10-30</time>
+            <h3>电台曲库补录 11 首</h3>
+            <p>全部为任务过场音乐，附触发条件。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="brand">
+          <svg class="mark" viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#e8622c"/>
+            <path d="M16 48V20h12c7.6 0 12 4.3 12 10.4 0 5.2-3 8.6-7.4 9.7L42 48h-9.2L24 40.8V48z" fill="#fff5e8"/>
+            <circle cx="47" cy="20" r="4" fill="#a8821c"/>
+          </svg>
+          <span class="btxt">r星精选<small>ROCKSTAR PICKS</small></span>
+        </div>
+        <p>把玩家会直接搜的条目整理成可核对的清单，每一项都标适用版本、实测时间与出处。</p>
+      </div>
+      <div class="foot-col">
+        <h3>栏目入口</h3>
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#featured">精选内容推荐</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#boards">榜单与时间线</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>参与与说明</h3>
+        <ul>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">玩家评论</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-meta">
+      <p>示例数据说明：页内载具报价、圈速、保险费、赏金耗时与电台曲目数量均为示例条目，日期集中在 2026-10-09 至 2026-11-06；条目定位与判断方法可独立核对，具体数值以游戏内为准。页面更新时间 <b>2026-11-06</b>，对应正文「Gun Van 隐藏折扣位置补录」与「HSW 保险费重算」两项。</p>
+      <p>© 2026 r星精选 · 内容整理与条目校订</p>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"r星精选",
+  "description":"给玩家看的私藏清单，收录 GTA 线上模式载具与改装、荒野大镖客2 采集路线、传说赏金与电台歌单，标注版本与实测时间。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"GTA 线上模式 HSW 升级在哪里解锁？","acceptedAnswer":{"@type":"Answer","text":"1.68 之后在三个载具改装台可进行 HSW 升级，分别位于第 3 区、机场西侧与码头东侧。需要先完成一次竞速类活动并拥有对应载具。"}},
+    {"@type":"Question","name":"荒野大镖客2 传说动物刷新点会不会随章节变化？","acceptedAnswer":{"@type":"Answer","text":"会。章节 2 只开放 4 种传说动物，其余 5 种需推进到章节 4 之后。刷新还受天气影响，雨天与晴天的概率点不同。"}},
+    {"@type":"Question","name":"传说赏金单人能完成吗？耗时大概多久？","acceptedAnswer":{"@type":"Answer","text":"13 名目标里有 9 名可以单人完成，平均耗时 11 至 16 分钟。1 号与 5 号路线最短，2 号需要两次换马。"}},
+    {"@type":"Question","name":"洛圣都电台歌单里哪些曲目只在任务中出现？","acceptedAnswer":{"@type":"Answer","text":"Non-Stop-Pop FM 有 8 首曲目只在特定抢劫任务中播放，正常驾驶时切不到，曲目表标注了触发任务名与出现时间点。"}},
+    {"@type":"Question","name":"Gun Van 本周的库存表几点刷新？","acceptedAnswer":{"@type":"Answer","text":"每天游戏内时间 06:00 刷新库存，现实时间与游戏内时间约 1:2。11 月 6 日库存表含 4 件折扣装备，两件降幅超过 30%。"}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var menuToggle = document.getElementById('menuToggle');
+  var mainnav = document.getElementById('mainnav');
+  if(menuToggle && mainnav){
+    menuToggle.addEventListener('click', function(){
+      var open = mainnav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainnav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 820){
+        mainnav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var data = [
+    {t:'GTA 线上模式载具', u:'/#featured', k:'gta 载具 hsw 改装 车 hsw升级 保险费'},
+    {t:'HSW 升级与改装', u:'/#featured', k:'hsw 升级 改装 改装台 保险费'},
+    {t:'GTA 线上模式赚钱路线', u:'/#deep', k:'赚钱 单局收益 路线 gta 线上模式'},
+    {t:'荒野大镖客2 采集路线', u:'/#featured', k:'荒野大镖客2 采集 草药 路线 狩猎'},
+    {t:'传说动物刷新点', u:'/#guide', k:'传说动物 刷新点 传说河狸 传说灰熊 传说野猪'},
+    {t:'传说赏金攻略', u:'/#boards', k:'传说赏金 通缉 单人 22:00 赏金'},
+    {t:'洛圣都电台歌单', u:'/#featured', k:'电台 歌单 洛圣都 曲目 non-stop-pop'},
+    {t:'每周折扣与 Gun Van', u:'/#latest', k:'gun van 折扣 库存 位置 第3区'},
+    {t:'玩家实测数据', u:'/#comments', k:'实测 圈速 保险 玩家评论'},
+    {t:'新玩家常见问题', u:'/#faq', k:'新手 常见问题 faq 解锁'},
+    {t:'社区原文与出处', u:'/#related', k:'出处 来源 原文 社区'},
+    {t:'Gun Van 隐藏折扣位置', u:'/#latest', k:'gun van 隐藏 折扣 位置 停车场'},
+    {t:'HSW 保险费重算', u:'/#deep', k:'hsw 保险费 涨幅 2%'},
+    {t:'传说赏金 22:00 档路线', u:'/#comments', k:'传说赏金 22:00 路线 哨卡'},
+    {t:'洛圣都电台隐藏曲', u:'/#featured', k:'隐藏曲 任务 过场 电台'},
+    {t:'荒野大镖客2 采集入门', u:'/#guide', k:'采集 入门 章节2 营地 药膏'}
+  ];
+
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var fb = document.getElementById('searchFeedback');
+
+  function doSearch(q){
+    var ql = (q || '').trim().toLowerCase();
+    if(!ql){ fb.innerHTML = '<p>输入载具名、路线名或版本号试试，例如「HSW」「传说赏金」「Gun Van」。</p>'; return; }
+    var hits = data.filter(function(d){
+      return (d.t + ' ' + d.k).toLowerCase().indexOf(ql) !== -1;
+    });
+    if(!hits.length){
+      fb.innerHTML = '<p>没找到与「' + q.replace(/[<>&"]/g,'') + '」匹配的条目，换个词试试，或者从 <a href="/#channels">分类入口</a> 浏览。</p>';
+      return;
+    }
+    var html = '<p>找到 ' + hits.length + ' 条相关条目：</p><ul class="hit-list">';
+    hits.slice(0,8).forEach(function(h){
+      html += '<li><a href="' + h.u + '">' + h.t + '</a></li>';
+    });
+    html += '</ul>';
+    fb.innerHTML = html;
+  }
+
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      doSearch(input.value);
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function(){
+      if(window.scrollY > 480){ toTop.classList.add('show'); }
+      else { toTop.classList.remove('show'); }
+      ticking = false;
+    });
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+          </html>
